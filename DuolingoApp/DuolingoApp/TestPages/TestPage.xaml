@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.TestPages.TestPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Margin="5,0,5,10" BackgroundColor="White">
+            <FlexLayout Margin="0,0,10,30" >
+                <Button x:Name="Back" Text="X" WidthRequest="40" BackgroundColor="White" Clicked="Back_Clicked" TextColor="Black" />
+                <ProgressBar x:Name="pbar" Margin="10,1,0,0" WidthRequest="250" ScaleY="3" ProgressColor="#FFDCA9 "/>
+            </FlexLayout>
+
+            <StackLayout Margin="5,0,5,0">
+                <Label Margin="0,0,0,0" x:Name="lblQuestion" TextColor="Black"
+                   HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
+
+                <Grid Margin="0,40,0,20">
+                    <Button x:Name="btnresp1" Grid.Row="0" Grid.Column="0" HeightRequest="100"
+                    TextColor="Black" BackgroundColor="White" FontSize="Medium" 
+                    BorderColor="Gray" BorderWidth="4" CornerRadius="15"
+                    Clicked="btnresp1_Clicked" ></Button>
+
+                    <Button x:Name="btnresp2" Grid.Row="0" Grid.Column="1" HeightRequest="100"
+                    TextColor="Black" BackgroundColor="White" FontSize="Medium" 
+                    BorderColor="Gray" BorderWidth="4" CornerRadius="15"
+                    Clicked="btnresp2_Clicked" ></Button>
+
+                    <Button x:Name="btnresp3" Grid.Row="1" Grid.Column="0" HeightRequest="100"
+                    TextColor="Black" BackgroundColor="White" FontSize="Medium" 
+                    BorderColor="Gray" BorderWidth="4" CornerRadius="15"
+                    Clicked="btnresp3_Clicked" ></Button>
+
+                    <Button x:Name="btnresp4" Grid.Row="1" Grid.Column="1" HeightRequest="100"
+                    TextColor="Black" BackgroundColor="White" FontSize="Medium" 
+                    BorderColor="Gray" BorderWidth="4" CornerRadius="15"
+                    Clicked="btnresp4_Clicked" ></Button>
+                </Grid>
+                <Button Text="Xem kết quả" x:Name="btnresult"
+                    HeightRequest="60" WidthRequest="10" CornerRadius="15" FontSize="Large"
+                    TextColor="White" BackgroundColor="#F57328 "
+                    Clicked="btnresult_Clicked"
+                    IsVisible="False">
+                </Button>
+
+                <Button Text="Xác nhận" x:Name="btnconfirm"
+                    HeightRequest="60" WidthRequest="10" CornerRadius="15" FontSize="Large"
+                    TextColor="White" BackgroundColor="#F57328 "
+                    Clicked="btnconfirm_Clicked"
+                    IsVisible="True">
+                </Button>
+
+                <Button Text="Hoàn thành hồ sơ" x:Name="btncompl"
+                    HeightRequest="70" WidthRequest="10" CornerRadius="15" FontSize="Large"
+                    TextColor="White" BackgroundColor="#F57328 "
+                    Clicked="btncompl_Clicked"
+                    IsVisible="False">
+                </Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
